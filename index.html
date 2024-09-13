@@ -3,65 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Página Web de Ejemplo</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-        header {
-            background-color: #4CAF50;
-            color: white;
-            padding: 10px 0;
-            text-align: center;
-        }
-        nav {
-            background-color: #333;
-            padding: 10px;
-        }
-        nav a {
-            color: white;
-            margin: 10px;
-            text-decoration: none;
-        }
-        section {
-            padding: 20px;
-        }
-        footer {
-            background-color: #4CAF50;
-            color: white;
-            text-align: center;
-            padding: 10px 0;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
-        }
-    </style>
+    <title>Página Web Avanzada</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Bienvenido a Mi Página Web</h1>
-    </header>
-    
+    <!-- Barra de navegación -->
     <nav>
-        <a href="#">Inicio</a>
-        <a href="#">Sobre mí</a>
-        <a href="#">Proyectos</a>
-        <a href="#">Contacto</a>
+        <ul>
+            <li><a href="#home">Inicio</a></li>
+            <li><a href="#about">Sobre mí</a></li>
+            <li><a href="#gallery">Galería</a></li>
+            <li><a href="#contact">Contacto</a></li>
+        </ul>
     </nav>
-    
-    <section>
-        <h2>Sobre mí</h2>
-        <p>Hola, soy [tu nombre], y esta es una página web de ejemplo. Aquí puedes agregar información sobre ti, tus proyectos, y cómo las personas pueden ponerse en contacto contigo.</p>
-        
-        <h2>Proyectos</h2>
-        <p>A continuación, puedes enumerar tus proyectos más destacados o incluir enlaces a trabajos que has realizado.</p>
+
+    <!-- Sección Inicio -->
+    <section id="home">
+        <h1>Bienvenido a mi Página Avanzada</h1>
+        <p>Explora el contenido dinámico con animaciones y efectos.</p>
     </section>
-    
+
+    <!-- Sección Sobre mí -->
+    <section id="about">
+        <h2>Sobre mí</h2>
+        <p>Soy un desarrollador web apasionado por crear experiencias interactivas y atractivas.</p>
+    </section>
+
+    <!-- Sección Galería con filtro -->
+    <section id="gallery">
+        <h2>Galería de Imágenes</h2>
+        <div id="filters">
+            <button class="filter-btn" data-filter="all">Todo</button>
+            <button class="filter-btn" data-filter="nature">Naturaleza</button>
+            <button class="filter-btn" data-filter="tech">Tecnología</button>
+        </div>
+        <div class="gallery-container">
+            <div class="gallery-item nature"><img src="images/img1.jpg" alt="Naturaleza 1"></div>
+            <div class="gallery-item tech"><img src="images/img2.jpg" alt="Tecnología 1"></div>
+            <div class="gallery-item nature"><img src="images/img3.jpg" alt="Naturaleza 2"></div>
+            <div class="gallery-item tech"><img src="images/img4.jpg" alt="Tecnología 2"></div>
+        </div>
+    </section>
+
+    <!-- Sección de Contacto -->
+    <section id="contact">
+        <h2>Contacto</h2>
+        <form id="contact-form">
+            <input type="text" id="name" placeholder="Tu nombre" required>
+            <input type="email" id="email" placeholder="Tu email" required>
+            <textarea id="message" placeholder="Escribe tu mensaje" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <!-- Pie de página -->
     <footer>
-        <p>&copy; 2024 Mi Página Web. Todos los derechos reservados.</p>
+        <p>&copy; 2024 Mi Página Avanzada. Todos los derechos reservados.</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
